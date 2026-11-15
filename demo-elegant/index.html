@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Wedding of Faris & Heldy</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       COVER UNDANGAN
+  ========================== -->
+
+  <section class="cover" id="cover">
+
+    <div class="cover-overlay"></div>
+
+    <div class="cover-decoration decoration-top"></div>
+    <div class="cover-decoration decoration-bottom"></div>
+
+    <div class="cover-content">
+
+      <p class="cover-small reveal">
+        THE WEDDING OF
+      </p>
+
+      <div class="cover-monogram reveal">
+        F <span>&</span> H
+      </div>
+
+      <h1 class="cover-name reveal">
+        Faris <span>&</span> Heldy
+      </h1>
+
+      <div class="gold-line reveal"></div>
+
+      <p class="cover-date reveal">
+        28 . 12 . 2027
+      </p>
+
+      <div class="guest-wrapper reveal">
+
+        <p>Kepada Yth.</p>
+
+        <h3 id="guestName">
+          Tamu Undangan
+        </h3>
+
+      </div>
+
+      <button class="open-button reveal" id="openButton">
+
+        <i class="fa-regular fa-envelope-open"></i>
+
+        BUKA UNDANGAN
+
+      </button>
+
+      <p class="cover-footer">
+        Tanpa mengurangi rasa hormat,
+        kami mengundang Anda.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       HALAMAN UTAMA
+  ========================== -->
+
+  <main id="mainInvitation" class="main-invitation">
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button class="music-button" id="musicToggle"
+      aria-label="Putar atau hentikan musik">
+
+      <i class="fa-solid fa-music"></i>
+
+    </button>
+
+    <audio id="weddingMusic" loop>
+      <source src="asset/music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- HERO -->
+
+    <section class="hero section-padding">
+
+      <div class="hero-decoration"></div>
+
+      <div class="section-inner reveal">
+
+        <p class="eyebrow">
+          ASSALAMUALAIKUM WARAHMATULLAHI WABARAKATUH
+        </p>
+
+        <div class="bismillah">
+          بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+        </div>
+
+        <p class="hero-description">
+          Dengan memohon rahmat dan ridho Allah SWT,
+          kami bermaksud menyelenggarakan pernikahan putra-putri kami.
+        </p>
+
+        <div class="hero-names">
+          <h1>Faris</h1>
+          <span>&</span>
+          <h1>Heldy</h1>
+        </div>
+
+        <p class="hero-date">
+          SELASA, 28 DESEMBER 2027
+        </p>
+
+        <div class="gold-line"></div>
+
+        <p class="hero-quote">
+          "Dan di antara tanda-tanda kekuasaan-Nya
+          ialah Dia menciptakan untukmu pasangan hidup
+          dari jenismu sendiri, supaya kamu merasa
+          tenteram kepadanya."
+        </p>
+
+        <p class="quote-source">
+          QS. Ar-Rum: 21
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEMPELAI -->
+
+    <section class="couple section-padding">
+
+      <div class="section-inner">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">THE BRIDE & GROOM</p>
+
+          <h2>Mempelai</h2>
+
+          <div class="gold-line"></div>
+
+          <p>
+            Dua hati yang dipertemukan
+            dalam satu perjalanan cinta.
+          </p>
+
+        </div>
+
+
+        <div class="couple-card reveal">
+
+          <div class="portrait-frame">
+            <img src="asset/foto-faris.png" alt="Faris">
+          </div>
+
+          <h3>Faris</h3>
+
+          <p>
+            Putra pertama dari
+            Bapak Farhan & Ibu Fira
+          </p>
+
+          <span class="social-name">
+            @faris123
+          </span>
+
+        </div>
+
+
+        <div class="couple-separator reveal">
+          <span>&</span>
+        </div>
+
+
+        <div class="couple-card reveal">
+
+          <div class="portrait-frame">
+            <img src="asset/foto-heldy.png" alt="Heldy">
+          </div>
+
+          <h3>Heldy</h3>
+
+          <p>
+            Putri pertama dari
+            Bapak Hairun & Ibu Hira
+          </p>
+
+          <span class="social-name">
+            @heldy456
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+
+    <section class="countdown-section section-padding">
+
+      <div class="section-inner reveal">
+
+        <p class="eyebrow">SAVE THE DATE</p>
+
+        <h2>Menuju Hari Bahagia</h2>
+
+        <p>
+          Dengan penuh rasa syukur,
+          kami menantikan hari istimewa ini.
+        </p>
+
+        <div class="countdown-container">
+
+          <div class="time-box">
+            <span id="days">00</span>
+            <small>HARI</small>
+          </div>
+
+          <div class="time-box">
+            <span id="hours">00</span>
+            <small>JAM</small>
+          </div>
+
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <small>MENIT</small>
+          </div>
+
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <small>DETIK</small>
+          </div>
+
+        </div>
+
+        <p class="countdown-caption">
+          28 Desember 2027
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- EVENT -->
+
+    <section class="event section-padding">
+
+      <div class="section-inner">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">WEDDING EVENT</p>
+
+          <h2>Rangkaian Acara</h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="event-card reveal">
+
+          <div class="event-icon">
+            <i class="fa-solid fa-ring"></i>
+          </div>
+
+          <p class="event-label">ACARA PERTAMA</p>
+
+          <h3>Akad Nikah</h3>
+
+          <div class="event-line"></div>
+
+          <p>Selasa, 28 Desember 2027</p>
+
+          <p>08.00 WIB - Selesai</p>
+
+        </div>
+
+
+        <div class="event-card reveal">
+
+          <div class="event-icon">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+
+          <p class="event-label">ACARA KEDUA</p>
+
+          <h3>Resepsi</h3>
+
+          <div class="event-line"></div>
+
+          <p>Selasa, 28 Desember 2027</p>
+
+          <p>11.00 - 14.00 WIB</p>
+
+        </div>
+
+
+        <div class="location-card reveal">
+
+          <i class="fa-solid fa-location-dot"></i>
+
+          <h3>Lokasi Acara</h3>
+
+          <p class="location-name">
+            Gedung Jaro Pirarahan
+          </p>
+
+          <p>
+            Jl. Pahlawan, Buntok Kota,
+            Kec. Dusun Selatan,
+            Kab. Barito Selatan,
+            Kalimantan Tengah
+          </p>
+
+          <!-- GOOGLE MAPS -->
+
+          <a
+            href="https://maps.app.goo.gl/UKMyAzwxLqCT4Mwf9"
+            target="_blank"
+            rel="noopener"
+            class="location-button">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            BUKA GOOGLE MAPS
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LOVE STORY -->
+
+    <section class="story section-padding">
+
+      <div class="section-inner">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">OUR JOURNEY</p>
+
+          <h2>Kisah Cinta</h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-dot"></div>
+
+            <span>2021</span>
+
+            <h3>Awal Bertemu</h3>
+
+            <p>
+              Sebuah pertemuan sederhana
+              yang menjadi awal cerita.
+            </p>
+
+          </div>
+
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-dot"></div>
+
+            <span>2024</span>
+
+            <h3>Melangkah Bersama</h3>
+
+            <p>
+              Saling mengenal, memahami,
+              dan tumbuh bersama.
+            </p>
+
+          </div>
+
+
+          <div class="timeline-item reveal">
+
+            <div class="timeline-dot"></div>
+
+            <span>2027</span>
+
+            <h3>Menuju Selamanya</h3>
+
+            <p>
+              Memantapkan hati untuk
+              mengikat janji suci.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery section-padding">
+
+      <div class="section-inner">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">OUR MEMORIES</p>
+
+          <h2>Galeri Bahagia</h2>
+
+          <div class="gold-line"></div>
+
+          <p>
+            Setiap momen memiliki cerita
+            yang akan selalu kami kenang.
+          </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <img class="reveal"
+            src="asset/gallery-1.jpg"
+            alt="Foto kenangan 1">
+
+          <img class="reveal"
+            src="asset/gallery-2.jpg"
+            alt="Foto kenangan 2">
+
+          <img class="reveal"
+            src="asset/gallery-3.jpg"
+            alt="Foto kenangan 3">
+
+          <img class="reveal"
+            src="asset/gallery-4.jpg"
+            alt="Foto kenangan 4">
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- RSVP -->
+
+    <section class="rsvp section-padding">
+
+      <div class="section-inner reveal">
+
+        <p class="eyebrow">RSVP</p>
+
+        <h2>Konfirmasi Kehadiran</h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          Kami sangat mengharapkan kehadiran
+          Anda pada hari bahagia kami.
+        </p>
+
+
+        <form id="rsvpForm">
+
+          <input
+            type="text"
+            id="rsvpName"
+            placeholder="Nama lengkap"
+            required>
+
+          <select id="attendance" required>
+
+            <option value="">Pilih konfirmasi</option>
+
+            <option value="Hadir">
+              Hadir
+            </option>
+
+            <option value="Tidak Hadir">
+              Maaf, belum bisa hadir
+            </option>
+
+          </select>
+
+          <textarea
+            id="message"
+            placeholder="Ucapan dan doa..."
+            rows="4"></textarea>
+
+          <button type="submit" class="submit-button">
+
+            KIRIM KONFIRMASI
+
+          </button>
+
+          <p id="rsvpStatus"></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="gift section-padding">
+
+      <div class="section-inner reveal">
+
+        <p class="eyebrow">WEDDING GIFT</p>
+
+        <h2>Tanda Kasih</h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          Doa restu Anda merupakan hadiah
+          terindah bagi kami. Namun jika ingin
+          memberikan tanda kasih, dapat melalui:
+        </p>
+
+
+        <div class="bank-card">
+
+          <div class="bank-top">
+            <h3>BCA</h3>
+            <i class="fa-solid fa-credit-card"></i>
+          </div>
+
+          <p class="bank-number" id="accountNumber">
+            ISI_NOMOR_REKENING
+          </p>
+
+          <p class="bank-owner">
+            a.n. Heldy
+          </p>
+
+          <button id="copyAccount" class="copy-button">
+
+            <i class="fa-regular fa-copy"></i>
+
+            SALIN NOMOR REKENING
+
+          </button>
+
+          <p id="copyMessage"></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CLOSING -->
+
+    <section class="closing section-padding">
+
+      <div class="section-inner reveal">
+
+        <p class="eyebrow">THANK YOU</p>
+
+        <div class="closing-flower">❦</div>
+
+        <h2>Terima Kasih</h2>
+
+        <p>
+          Merupakan suatu kehormatan dan
+          kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir
+          dan memberikan doa restu.
+        </p>
+
+        <p class="closing-prayer">
+          Wassalamualaikum warahmatullahi wabarakatuh.
+        </p>
+
+        <div class="closing-names">
+          Faris <span>&</span> Heldy
+        </div>
+
+        <div class="gold-line"></div>
+
+        <p class="footer">
+          MADE WITH LOVE ♡ FARIS & HELDY
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- NOTIFIKASI -->
+  <div class="toast" id="toast"></div>
+
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
